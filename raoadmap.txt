@@ -1,0 +1,18 @@
+-> foto carousel + item
+- air jordan
+- dunk
+- airforce
+- blazer
+
+carousel 
+- air jordan	- UK 40 - 45
+- dunk		- UK 40 - 45
+- airforce	- UK 40 - 45
+- blazer	- UK 40 - 45
+
+-> index.html
+- Home
+- About us
+- Hubungi Kami
+- Index Sepatu -> 4
+- Login

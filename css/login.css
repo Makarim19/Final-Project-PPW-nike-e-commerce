@@ -1,0 +1,126 @@
+/* Global Styles */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Section Styles */
+.vh-100 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f4f4f4;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: #fff;
+}
+
+/* Input and Label Styles */
+.form-outline {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-outline input {
+    border: none;
+    border-bottom: 2px solid #ddd;
+    border-radius: 0;
+    padding: 0.5rem;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.form-outline input:focus {
+    border-bottom-color: #111;
+    box-shadow: none;
+    outline: none;
+}
+
+.form-outline label {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    color: #aaa;
+    transition: all 0.3s;
+}
+
+.form-outline input:focus+label,
+.form-outline input:not(:placeholder-shown)+label {
+    top: -1rem;
+    left: 0.5rem;
+    font-size: 0.85rem;
+    color: #508bfc;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #111;
+    border-color: #111;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+.btn-primary.btn-google {
+    background-color: #dd4b39;
+    border-color: #dd4b39;
+}
+
+.btn-primary.btn-google:hover {
+    background-color: #c23321;
+    border-color: #c23321;
+}
+
+/* Checkbox Styles */
+.form-check-input {
+    margin-top: 0.3rem;
+}
+
+.form-check-label {
+    margin-left: 1rem;
+    color: #333;
+}
+
+/* Card Header */
+.card-body h3 {
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+/* Divider */
+.card-body hr {
+    margin: 2rem 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+/* Ripple Effect */
+[data-mdb-ripple-init] {
+    position: relative;
+    overflow: hidden;
+}
+
+[data-mdb-ripple-init]::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(1);
+    opacity: 0;
+    pointer-events: none;
+}
+
+[data-mdb-ripple-init]:hover::after {
+    opacity: 0.3;
+    transform: scale(2.5);
+}
